@@ -1,4 +1,5 @@
 import { createHomeStyles } from "@/assets/images/styles/home.styles";
+import GoalInput from "@/components/GoalInput";
 import Header from "@/components/Header";
 import { useTheme } from "@/hooks/useTheme";
 import { LinearGradient } from "expo-linear-gradient";
@@ -17,6 +18,7 @@ export default function Index() {
       <StatusBar barStyle={colors.statusBarStyle} />
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
+        <GoalInput />
         <Text>Edit app/index.tsx to edit this screen.</Text>
         <Text>npx expo start --host tunnel</Text>
         <TouchableOpacity onPress={toggleDarkMode}>
