@@ -1,4 +1,4 @@
-import useTheme from '@/hooks/useTheme';
+import { useTheme } from '@/hooks/useTheme';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 

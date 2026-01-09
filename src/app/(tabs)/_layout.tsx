@@ -1,5 +1,6 @@
-import useTheme from "@/hooks/useTheme";
+import { useTheme } from "@/hooks/useTheme";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import Octicons from "@expo/vector-icons/Octicons";
 import { Tabs } from "expo-router";
 import React from 'react';
 
@@ -27,8 +28,8 @@ const Tabslayout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Todos",
-          tabBarIcon: ({color, size}) => <Ionicons name="flash-outline" size={size} color={color} />,
+          title: "Goals",
+          tabBarIcon: ({color, size}) => <Octicons name="home" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
