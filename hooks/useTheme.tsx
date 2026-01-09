@@ -92,9 +92,9 @@ const darkColors: ColorScheme = {
 };
 
 interface ThemeContextType {
-    isDarkMode: boolean;
-    toggleDarkMode: () => void;
-    colors: ColorScheme
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
+  colors: ColorScheme;
 }
 
 const ThemeContext = createContext<undefined | ThemeContextType>(undefined)
@@ -123,7 +123,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode}) => {
     )
 };
 
-const useTheme = () => {
+export const useTheme = () => {
     const context = useContext(ThemeContext);
     if(context === undefined) {
         throw new Error("Error in useThemeProvider");
@@ -131,5 +131,3 @@ const useTheme = () => {
 
     return context;
 }
-
-export default useTheme;
