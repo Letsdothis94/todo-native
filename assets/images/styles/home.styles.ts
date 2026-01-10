@@ -193,6 +193,7 @@ export const createHomeStyles = (colors: ColorScheme) => {
     editButtons: {
       flexDirection: "row",
       gap: 12,
+      justifyContent: "flex-end"
     },
     editButton: {
       flexDirection: "row",
