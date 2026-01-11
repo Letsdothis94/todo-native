@@ -1,4 +1,5 @@
 import { createSettingsStyles } from '@/assets/images/styles/settings.styles';
+import DeleteAll from '@/components/DeleteAll';
 import SettingsBtns from '@/components/SettingsBtns';
 import { useTheme } from '@/hooks/useTheme';
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -29,6 +30,7 @@ const SettingsScreen = () => {
             showsVerticalScrollIndicator={false}
           >
             <SettingsBtns />
+            <DeleteAll />
           </ScrollView>
         </SafeAreaView>
       </LinearGradient>
